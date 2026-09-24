@@ -1,6 +1,9 @@
 
 See `/docs/architecture.png` for the full diagram.
 
+
+[![Storykeeper demo](https://img.youtube.com/vi/Nb0vNUb5AEc/maxresdefault.jpg)](https://www.youtube.com/watch?v=Nb0vNUb5AEc)
+
 ## Repo contents
 
 - `/solution` — Power Platform managed solution (`.zip`), includes the Dataverse tables, the four Copilot Studio agents, and the Power Pages site
