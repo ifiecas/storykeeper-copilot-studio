@@ -1,20 +1,29 @@
-# Storykeeper
 
-*A shared memory bank for people living with dementia and the carers and family around them.*
+See `/docs/architecture.png` for the full diagram.
 
-Built with Copilot Studio, Dataverse, and Power Pages for the Microsoft Agent-a-thon (Level 2 Maker).
+## Repo contents
 
-## Why
+- `/solution` — Power Platform managed solution (`.zip`), includes the Dataverse tables, the four Copilot Studio agents, and the Power Pages site
+- `/docs` — architecture diagram and supporting documentation
+- `README.md` — this file
 
-Over 55 million people live with dementia worldwide, a number expected to reach 139 million by 2050. As conversations get harder, families lose connection, and the stories disappear before anyone thinks to write them down.
+## Setup
 
-I built this because my father was diagnosed with dementia last year.
+1. Import the managed solution from `/solution` into a Dataverse environment via [make.powerapps.com](https://make.powerapps.com) → Solutions → Import.
+2. Publish the four agents in Copilot Studio: **Storykeeper**, **Memory Keeper**, **Wellbeing**, **Family Companion**.
+3. Publish the Power Pages site and invite family members as portal contacts.
+4. Seed at least one **Person** record and a few **Memory** entries so the first conversation has something to work with.
 
-## What it does
+## Built with
 
-A carer talks to **Storykeeper** during a visit — voice only, no typing. Behind it:
-- **Memory Keeper** files new memories into a shared bank automatically
-- **Wellbeing** checks for patterns across visits worth flagging
-- **Family Companion** sits on a private Power Pages portal so family can stay connected and ask about recent visits
+- Copilot Studio (GitHub Copilot harness)
+- Microsoft Dataverse
+- Power Pages
+- Dataverse MCP Server
 
-Four agents, one shared memory.
+## Author
+
+**Ivy Fiecas**
+hello@ifiecas.com · [ifiecas.com](https://ifiecas.com) · [linkedin.com/in/ifiecas](https://linkedin.com/in/ifiecas)
+
+Built for the Microsoft Agent-a-thon: Level 2 Maker.
